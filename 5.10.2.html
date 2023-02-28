@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+function getWeekDay(date) {
+    let allDays =['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+    day = allDays[date.getDay()];
+    return day
+}
+let date = new Date(2012, 0, 3);
+alert(getWeekDay(date))
+</script>
+ 
+</body>
+
+</html>

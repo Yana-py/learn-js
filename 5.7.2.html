@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+function aclean(arr) {
+    let arrNew = {}
+    for (elem of arr) {
+        let sorted = elem.toLowerCase().split('').sort().join('')
+        arrNew[sorted] = elem
+    }
+    return Object.values(arrNew)
+}
+
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+alert( aclean(arr) );
+
+</script>
+ 
+</body>
+
+</html>

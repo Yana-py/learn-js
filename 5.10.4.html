@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+function getDateAgo(date, days) {
+    date.setDate(date.getDate() - days);
+    return date.getDate();
+}
+
+let date = new Date(2015, 0, 2);
+alert(getDateAgo(date, 4));
+
+</script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+function formatDate(date) {
+    let now = new Date();
+    
+    let msecond = now - date;
+    let second = msecond/1000;
+    let min = msecond/6000;
+    if (msecond < 1000) {
+        alert('Прямо сейчас');
+    } else if (second < 60) {
+       alert(`${second} секунд назад`);
+    } else if (min < 60) {
+        alert(`${min} минут назад`);
+    } else {
+        alert(date)
+    }
+}
+
+formatDate(new Date(new Date - 2));
+
+</script>
+ 
+</body>
+
+</html>

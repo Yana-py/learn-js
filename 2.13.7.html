@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+
+let counter = 0;
+let numStart = promt('Введите начало интервала'; '');
+let numExit = promt('Введите конец интервала'; '');
+for (numStart; numStart <= numExit; ++numStart) {
+	
+	for (let i=0, i <= numStart, i++) {
+		if numStart % i == 0 {
+			counter ++;
+		}
+	}
+
+	if (counter == 2) {
+		alert(numStart);
+	}
+}
+</script>
+  
+</body>
+
+</html>

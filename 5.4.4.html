@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+function sumInput() {
+    let arr = [];
+    while (true) {
+        let num = +prompt('Введите значение', ''); 
+        if (num == '' || num == null || !isFinite(num)) {
+            break;
+        } else {
+            arr.push(+num);
+        }
+    }
+    let sumArr = arr.reduce(function(sum, elem){
+        return sum +elem;
+    }, 0);
+    alert(sumArr);
+}
+
+sumInput()
+</script>
+ 
+</body>
+
+</html>

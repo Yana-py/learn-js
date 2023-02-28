@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+function unique(arr) {
+  let arrUniqeu = new Set();
+  for (elem of arr) {
+    arrUniqeu.add(elem)
+  }
+  return arrUniqeu
+}
+
+let values = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+console.log( unique(values) );
+
+</script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+
+function filterRange(arr, a, b) {
+    let arrNew = []
+    for (let elem of arr) {
+        if ( elem >= a && elem <=b) {
+            arrNew.push(elem)
+        }
+    }
+    console.log(arr)
+    console.log(arrNew)
+}
+filterRange([5, 3, 8, 1], 1, 4)
+</script>
+ 
+</body>
+
+</html>

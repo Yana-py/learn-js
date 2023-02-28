@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+    function readNumber() {
+        while (true) {
+            let num = prompt('Введите число', '0');
+            if (isFinite(num)== true && num !=null) {
+                alert(`Ваше число ${num}`)
+                break
+            } else if (num == null) {
+                alert(`Ввод остановлен`)
+                break
+            } 
+        }
+    }
+    readNumber()
+</script>
+  
+</body>
+
+</html>
